@@ -12,7 +12,7 @@ function App() {
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post('http://192.168.1.104:7000/ask', { question });
+      const response = await axios.post('http://localhost:5000/ask', { question });
       setAnswer(response.data.answer);
     } catch (error) {
       console.error('Error fetching the answer:', error);
